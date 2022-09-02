@@ -74,7 +74,7 @@ for ir in range(r):
             pointA.append(dat[ir,3*ic+k])
             pointB.append(dat[ir,3*jc+k])
         edgest.append([pointA,pointB])
-et = Line3DCollection(edgest, linewidth = 0.1, color = [0,0,0], norm=plt.Normalize(0, n), alpha = 0.5)
+et = Line3DCollection(edgest, linewidth = 0.1, color = [0,0,0],  alpha = 0.5)
 ax.add_collection3d(et) 
 
 #input cells data
@@ -91,11 +91,11 @@ for ir in range(r):
             pointA.append(dat[ir,3*ic+k])
             pointB.append(dat[ir,3*jc+k])
         edgesc.append([pointA,pointB])
-ec = Line3DCollection(edgesc, linewidth = 0.1, color = [0,0,0], norm=plt.Normalize(0, n), alpha = 0.1)
+ec = Line3DCollection(edgesc, linewidth = 0.1, color = [0,0,0],  alpha = 0.1)
 ax.add_collection3d(ec) 
 
 #Bounding box edges
-lc = Line3DCollection(seg, cmap=plt.get_cmap('copper'), norm=plt.Normalize(0, n), alpha = 0.2)
+lc = Line3DCollection(seg, cmap=plt.get_cmap('copper'),  alpha = 0.2)
 ax.add_collection3d(lc) 
 
 #plot and save
@@ -138,7 +138,7 @@ ax.add_collection3d(facets)
 
 #Boundign box
 lc = Line3DCollection(seg, cmap=plt.get_cmap('copper'),
-                    norm=plt.Normalize(0, n), alpha = 0.2)
+                     alpha = 0.2)
 ax.add_collection3d(lc) 
 
 #plot and save file
@@ -178,8 +178,7 @@ r,c  = np.shape(dat)
 col =  [cmap(int(dat[3,ir])) for ir in range(len(dat[3]))];
 ax.scatter3D(dat[0], dat[1], dat[2], s=0.01, facecolor = col, marker = "o", alpha = 1.);
 
-lc = Line3DCollection(seg, cmap=plt.get_cmap('copper'),
-                    norm=plt.Normalize(0, n))
+lc = Line3DCollection(seg, cmap=plt.get_cmap('copper'))
 ax.add_collection3d(lc)  
 
 #plot and save image
@@ -223,7 +222,7 @@ ax.add_collection3d(facets)
 
 #Boundign box
 lc = Line3DCollection(seg, cmap=plt.get_cmap('copper'),
-                    norm=plt.Normalize(0, n), alpha = 0.2)
+                     alpha = 0.2)
 ax.add_collection3d(lc) 
 
 #plot and save file
@@ -279,7 +278,7 @@ ax.add_collection3d(facets4)
 
 #Boundign box
 lc = Line3DCollection(seg, cmap=plt.get_cmap('copper'),
-                    norm=plt.Normalize(0, n), alpha = 0.2)
+                     alpha = 0.2)
 ax.add_collection3d(lc) 
 
 #plot and save file
