@@ -1,0 +1,15 @@
+(1) Natural frequency  R_0 << R_v0
+(2) Viscous Damping Coeff
+(3) Small Pressure perturbation. p_inf0 + p_a exp(j omega t)
+(4) Small Pressure step. p_inf = p_inf0 + p_a. 
+    pa << p_inf0
+(5) Acoustic pertubation on one side of the tube.
+(6) Add compliance
+(7) DNS
+(8) Thermal Coupling. (Solve inside the bubble)
+(9) Fow inside complaible tube
+(10) In the limit R_0/R_v0 -> 0
+(11) Eqb shape of a bubble inside a tube.
+(12) Non uniform pressure forcing
+    p(r->infty,theta) = f(theta)
+(13) Flow in the tube + potential
