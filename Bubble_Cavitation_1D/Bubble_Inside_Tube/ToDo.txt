@@ -12,4 +12,7 @@
 (11) Eqb shape of a bubble inside a tube.
 (12) Non uniform pressure forcing
     p(r->infty,theta) = f(theta)
+    (a) find shape from mean flow.
+    (b) Find natural frequency (oscillation from mean shape)
 (13) Flow in the tube + potential
+(14) Achieve FSI flow in tube
